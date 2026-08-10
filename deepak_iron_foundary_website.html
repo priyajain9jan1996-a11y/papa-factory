@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak Iron Foundary | Iron Pulley Manufacturer in Agra</title>
+  <meta name="description" content="Deepak Iron Foundary manufactures durable iron pulleys and castings for industrial and agricultural use in Agra, Uttar Pradesh." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #1f2933;
+      background: #f7f7f7;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #071827;
+      color: white;
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      background: white;
+      border-radius: 8px;
+      padding: 4px;
+    }
+
+    .logo-box h1 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f97316;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(7, 24, 39, 0.85), rgba(7, 24, 39, 0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 110px 7%;
+      text-align: left;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      max-width: 750px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f97316;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid white;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #071827;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+      color: #555;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: #f3f4f6;
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 6px solid #f97316;
+    }
+
+    .placeholder-photo {
+      height: 310px;
+      background: #d1d5db;
+      border: 3px dashed #9ca3af;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #374151;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 20px;
+    }
+
+    .products-grid, .why-grid, .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #071827;
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .icon {
+      font-size: 42px;
+    }
+
+    .products {
+      background: #f7f7f7;
+    }
+
+    .why {
+      background: #071827;
+      color: white;
+    }
+
+    .why .section-title, .why .section-subtitle {
+      color: white;
+    }
+
+    .why .card {
+      background: #10263a;
+      color: white;
+    }
+
+    .why .card h3 {
+      color: #f97316;
+    }
+
+    .gallery {
+      background: white;
+    }
+
+    .contact {
+      background: #f3f4f6;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .contact-box p {
+      margin-bottom: 14px;
+      font-size: 17px;
+    }
+
+    .contact-box a {
+      color: #071827;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #071827;
+      color: white;
+      text-align: center;
+      padding: 25px 7%;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      z-index: 2000;
+    }
+
+    @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .about-grid, .products-grid, .why-grid, .gallery-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-box">
+      <!-- Uploaded Deepak Iron Foundary logo integrated -->
+      <img src="logo.png" alt="Deepak Iron Foundary Logo" />
+      <h1>Deepak Iron Foundary</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Durable Iron Pulleys & Castings Built for Reliable Performance</h2>
+    <p>Deepak Iron Foundary manufactures strong and long-lasting iron pulleys for industrial, agricultural, and machinery applications.</p>
+    <a class="btn" href="tel:+919412341565">Call Now</a>
+    <a class="btn secondary" href="https://wa.me/919412341565" target="_blank">WhatsApp Enquiry</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle">Trusted iron foundry based in Agra, Uttar Pradesh.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Deepak Iron Foundary</h3>
+        <p>We are engaged in manufacturing quality iron pulleys and cast iron products for customers who need strength, durability, and dependable performance.</p>
+        <p>Our focus is on good material quality, proper finishing, timely supply, and customer satisfaction.</p>
+      </div>
+      <div class="placeholder-photo">
+        Add factory or product photo here later
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-subtitle">We manufacture iron pulley products for different machinery and business needs.</p>
+    <div class="products-grid">
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Iron Pulleys</h3>
+        <p>Heavy-duty iron pulleys available in different sizes as per requirement.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏭</div>
+        <h3>Industrial Castings</h3>
+        <p>Strong cast iron products suitable for industrial machinery applications.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚜</div>
+        <h3>Agricultural Use</h3>
+        <p>Reliable pulley solutions for agricultural machines and equipment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">Built with strength, quality, and trust.</p>
+    <div class="why-grid">
+      <div class="card">
+        <h3>Strong Material</h3>
+        <p>Manufactured using quality iron for better durability.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Sizes</h3>
+        <p>Different pulley sizes can be supplied as per requirement.</p>
+      </div>
+      <div class="card">
+        <h3>Timely Delivery</h3>
+        <p>We focus on timely supply and dependable service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2 class="section-title">Product Gallery</h2>
+    <p class="section-subtitle">Product photos can be added here later.</p>
+    <div class="gallery-grid">
+      <div class="placeholder-photo">Add pulley photo 1</div>
+      <div class="placeholder-photo">Add pulley photo 2</div>
+      <div class="placeholder-photo">Add pulley photo 3</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">For orders, rates, and business enquiries, contact us directly.</p>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <p><strong>Business Name:</strong> Deepak Iron Foundary</p>
+        <p><strong>Phone / WhatsApp:</strong> <a href="tel:+919412341565">9412341565</a></p>
+        <p><strong>Alternate Phone:</strong> <a href="tel:+918755056962">8755056962</a></p>
+        <p><strong>Email:</strong> <a href="mailto:deepakjain.jain1234@gmail.com">deepakjain.jain1234@gmail.com</a></p>
+        <p><strong>Alternate Email:</strong> <a href="mailto:Ankurjain180290@gmail.com">Ankurjain180290@gmail.com</a></p>
+        <p><strong>Address:</strong> 12/147 E/E Link Road, Nunhai, Agra, Uttar Pradesh 282006</p>
+      </div>
+      <div class="contact-box">
+        <h3>Send Enquiry</h3>
+        <p>Click below to send enquiry on WhatsApp.</p>
+        <a class="btn" href="https://wa.me/919412341565?text=Hello%20Deepak%20Iron%20Foundary%2C%20I%20want%20to%20enquire%20about%20iron%20pulleys." target="_blank">Send WhatsApp Message</a>
+      </div>
+    </div>
+    <div style="margin-top:40px; border-radius:12px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.08);">
+      <iframe
+        src="https://www.google.com/maps?q=12/147%20E/E%20Link%20Road,%20Nunhai,%20Agra,%20Uttar%20Pradesh%20282006&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Deepak Iron Foundary. All Rights Reserved.</p>
+    <p>Strong Castings. Reliable Performance.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919412341565" target="_blank">WhatsApp</a>
+
+</body>
+</html>
